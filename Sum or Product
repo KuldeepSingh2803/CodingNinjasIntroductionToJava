@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int c = sc.nextInt();
+       int ans=1;
+
+       for(int i=2;i<=n;i++){
+           if(c==1){
+               ans=ans+i;
+           }
+           if(c==2){
+               ans=ans*i;
+
+           }if(c>2){
+               ans=-1;
+           }
+
+       }
+        System.out.println(ans);
+
+
+
+
+	}
+}
