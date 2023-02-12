@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+       int base = sc.nextInt();
+	     char c = sc.next().charAt(0);
+
+		 
+        double hra = 0.2*base;
+        double da = 0.5*base;
+        double pf = 0.11*base;
+
+      
+         int all;
+        if(c == 'A'){
+            all = 1700;
+        }  else if (c=='B'){
+             all = 1500;
+        } else   {
+             all = 1300;}
+
+            double ts =base + hra +da + all - pf;
+           int ans =(int)Math.round(ts);
+        System.out.println(ans);
+
+		// Write your code here
+
+	}
+}
